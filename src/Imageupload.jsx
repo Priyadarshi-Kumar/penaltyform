@@ -19,12 +19,12 @@ class Imageuploader extends React.Component {
         return (
             <ImageUploader
                 withPreview={true}
-                withIcon={true}
+                withIcon={false}
                 withLabel={false}
                 buttonText='Upload images'
                 onChange={this.onDrop}
                 imgExtension={['.jpg', '.jpeg', '.png', '.gif']}
-                maxFileSize={5242880}
+                maxFileSize={10242880}
             />
         );
     }
