@@ -1,19 +1,32 @@
-import React, { Component } from 'react'
-import MuiPhoneNumber from "material-ui-phone-number"
+import React, { Component } from "react";
+import MuiPhoneNumber from "material-ui-phone-number";
 
 class PenaltyForm extends Component {
-    handleOnChange = (value) => {
-        this.setState({
-            phone: value
-         });
-    }
+  state = {};
+  handleOnChange = value => {
+    this.setState({
+      phone: value
+    });
+  };
+  handleSubmit = () => {
+
+  }
+  
   render() {
     return (
       <div>
-        <MuiPhoneNumber defaultCountry={'us'} onChange={this.handleOnChange}/>
+        <form onSubmit={this.handleSubmit}>
+          <MuiPhoneNumber
+            required={true}
+            fullWidth={true}
+            defaultCountry={"in"}
+            onChange={this.handleOnChange}
+            onlyCountries={["in"]}
+          />
+        </form>
       </div>
-    )
+    );
   }
 }
 
-export default  PenaltyForm;
+export default PenaltyForm;
