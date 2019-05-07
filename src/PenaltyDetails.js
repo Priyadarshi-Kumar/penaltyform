@@ -25,8 +25,8 @@ const styles = theme => ({
         maxWidth: 500
     },
     image: {
-        width: 70,
-        height: 70
+        width: 80,
+        height: 80
     },
     img: {
         margin: "auto",
@@ -51,8 +51,8 @@ class PenaltyDetails extends Component {
                                 />
                             </ButtonBase>
                         </Grid>
-                        <Grid item xs={12} sm container>
-                            <Grid item xs container direction="column" spacing={16}>
+                        <Grid item xs={8} sm container>
+                            <Grid item xs container direction="column" spacing={8}>
                                 <Grid item xs>
                                     <Typography gutterBottom variant="subtitle1">
                                         Ayushman
