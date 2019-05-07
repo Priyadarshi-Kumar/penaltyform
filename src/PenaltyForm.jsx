@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class PenaltyForm extends Component {
+class PenaltyForm extends Component {
   render() {
     return (
       <div>
@@ -9,3 +9,5 @@ export default class PenaltyForm extends Component {
     )
   }
 }
+
+export default  PenaltyForm;
